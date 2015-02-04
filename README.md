@@ -2,10 +2,9 @@
 
 ## Tutorial
 
-### Setting up Node server
+### Setting up test environment
 
 First, we prepare our package.json file
-
 ```
 npm init
 npm install --save-dev mocha
@@ -24,7 +23,6 @@ git config core.autocrlf false
 ```
 
 Then, we want to prepare our Gruntfile.js
-
 ```javascript
 module.exports = function(grunt) {
   grunt.initConfig({
@@ -43,4 +41,50 @@ module.exports = function(grunt) {
 }
 ```
 
-After that,
+After that, we create a test folder, and write or first test file, something like this
+```
+mkdir test
+```
+```javascript
+describe('homepage', function() {
+  before(function() {
+    casper.start('http://localhost:3000');
+  });
+
+  it('hello worlds', function() {
+    casper.then(function() {
+      expect("body").to.have.text("Hello World");
+    });
+  });
+});
+```
+
+### Setting up the server using express
+
+We need to first install Express locally
+```
+npm install --save express
+npm install --save ejs
+```
+
+Finally, we create our server file server.js. This is the controller, something like this.
+```javascript
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', function(request, response) {
+  response.render('index', request.query);
+});
+
+```
+
+Then, we want to create a views folder, and touch an entry point, index.ejs
+```
+mkdir views
+touch index.ejs
+```
+
