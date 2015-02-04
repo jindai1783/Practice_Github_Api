@@ -1,7 +1,17 @@
 # Practice_Github_Api
 
+<div id="table-of-contents">
+## Table of Contents
+
+1. [Tutorial](#tutorial)
+  1. [Setting up test environment](#tutorial1)
+  2. [Setting up the server using express](#tutorial2)
+2. [Try It](#try-it)
+
+<div id="tutorial">
 ## Tutorial
 
+<div id="tutorial1">
 ### Setting up test environment
 
 First, we prepare our package.json file
@@ -59,6 +69,9 @@ describe('homepage', function() {
 });
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
+<div id="tutorial2">
 ### Setting up the server using express
 
 We need to first install Express locally
@@ -87,4 +100,9 @@ Then, we want to create a views folder, and touch an entry point, index.ejs
 mkdir views
 touch index.ejs
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+<div id="try-it">
+## Try It
 
