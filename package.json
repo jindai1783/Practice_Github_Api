@@ -1,0 +1,29 @@
+{
+  "name": "Practice_Github_Api",
+  "version": "1.0.0",
+  "description": "## Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jindai1783/Practice_Github_Api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jindai1783/Practice_Github_Api/issues"
+  },
+  "homepage": "https://github.com/jindai1783/Practice_Github_Api",
+  "devDependencies": {
+    "casper-chai": "^0.2.1",
+    "casperjs": "^1.1.0-beta3",
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-mocha-casperjs": "^1.4.1",
+    "mocha": "^2.1.0",
+    "mocha-casperjs": "^0.5.3",
+    "phantomjs": "^1.9.15"
+  }
+}
