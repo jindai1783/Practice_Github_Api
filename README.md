@@ -103,6 +103,17 @@ touch index.ejs
 
 **[⬆ back to top](#table-of-contents)**
 
-<div id="try-it">
-## Try It
+<div id="api">
+## API
 
+Try putting this into the html request, and keep refreshing
+```
+https://api.github.com/zen
+```
+
+Also try to type this in your command line
+```
+curl https://api.github.com/zen
+```
+
+This is how api handles information input and output.
