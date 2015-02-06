@@ -1,1 +1,19 @@
-Hello World
+<html>
+  <head>
+    <title>Github Profiles</title>
+  </head>
+
+  <body>
+
+    <script src='../mustache.js'></script>
+    <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
+    <div>Hello Jin!!!</div>
+    <script>
+      $(document).ready(function() {
+        $.get('https://api.github.com/users/josephwolf', function(user) {
+          console.log(user);
+        });
+      });
+    </script>
+  </body>
+</html>

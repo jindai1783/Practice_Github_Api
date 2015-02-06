@@ -6,7 +6,8 @@
 1. [Tutorial](#tutorial)
   1. [Setting up test environment](#tutorial1)
   2. [Setting up the server using express](#tutorial2)
-2. [Try It](#try-it)
+2. [API](#api)
+  1. [Loading api from Github](#tutorial3)
 
 <div id="tutorial">
 ## Tutorial
@@ -117,3 +118,46 @@ curl https://api.github.com/zen
 ```
 
 This is how api handles information input and output.
+
+<div id="tutorial3">
+### Loading api from Github
+
+
+## About JQuery
+
+What can JQuery do?
+
+You can see the uncompressed JQuery file.
+
+[uncompressed JQuery file]: http://code.jquery.com/jquery-1.11.2.js
+
+```javascript
+$ === JQuery
+1. convenient class methods ---> e.g. AJAX; $.get
+//passing a string
+2. $('.class') $() ---> window.document.findElementByClass('.class')
+//passing a object
+3. var x = window.document.findElementByClass('.class')[0] ---> $(x).on('click')
+//passing a function
+4. $(function() {})
+```
+
+Without JQuery, we must use
+
+```javascript
+var oReq = new XMLHttpRequest();
+oReq.onload = function() {
+  console.log(this.responseText);
+};
+oReq.open("get", 'localhost:9999/users/tansaku', true);
+oReq.send();
+console.log(this.responseText);
+```
+
+With JQuery, this boil down to
+
+```javascript
+$.get('localhost:9999/users/tansaku', function() {
+  console.log(this.responseText);
+});
+```
