@@ -135,7 +135,12 @@ Failed to load resource: the server responded with a status of 404 (Not Found)
 
 Note, the server has port 3000. It will also work for other ports, but will not work at ports when that port is run elsewhere.
 
+### Loading api from other sites
 
+In the console, try to type. This will give you json that differs from the above one.
+```javascript
+$.get('api.github.com/')
+```
 
 <div id="about-jquery">
 ## About JQuery
