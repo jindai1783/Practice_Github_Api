@@ -5,14 +5,41 @@
 
   <body>
 
-    <script src='../mustache.js'></script>
+    <template id='profile-template'>
+      <div class="profile">
+        <div class="left">
+          <img src="{{ avatar_url }}">
+        </div>
+
+        <div class="right">
+          <h3>
+            <a href="{{ html_url }}">
+              {{ login }}
+            </a>
+          </h3>
+          <h4>Repos: {{ public_repos }}</h4>
+          <h4>Followers: {{ followers }}</h4>
+        </div>
+        <br clear="all">
+      </div>
+    </template>
+
     <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.js'></script>
     <div>Hello Jin!!!</div>
     <script>
-      $(document).ready(function() {
-        $.get('https://api.github.com/users/josephwolf', function(user) {
-          console.log(user);
-        });
+      $(document).ready(function(){
+        // $.get('https://api.github.com/users/jindai1783', function(user) {
+        //   var newProfile = Mustache.render($('#profile-template').html(), user);
+        //   $('.profile-container').append(newProfile);
+        // });
+        // $.get('https://api.github.com/users/jindai1783', function(user){
+        //   var newProfile = Mustache.render($('#profile-template').html(), user);
+        //   console.log(newProfile);
+        //   $('.profile-container').append(newProfile);
+        // })
+        var object = $.get('https://api.github.com/users/jindai1783');
+
       });
     </script>
   </body>

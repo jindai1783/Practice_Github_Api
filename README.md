@@ -8,6 +8,7 @@
   2. [Setting up the server using express](#tutorial2)
 2. [API](#api)
   1. [Loading api from Github](#tutorial3)
+3. [About JQuery](#about-jquery)
 
 <div id="tutorial">
 ## Tutorial
@@ -122,14 +123,32 @@ This is how api handles information input and output.
 <div id="tutorial3">
 ### Loading api from Github
 
+In the console, try to type. This will give you an Object which contains the responseJSON
+```javascript
+$.get('api.github.com/users/jindai1783')
+```
 
+If we implement this in the server, it will throw this error - server don't like to approach out.
+```
+Failed to load resource: the server responded with a status of 404 (Not Found)
+```
+
+Note, the server has port 3000. It will also work for other ports, but will not work at ports when that port is run elsewhere.
+
+
+
+<div id="about-jquery">
 ## About JQuery
 
 What can JQuery do?
 
 First, have a look at the [uncompressed JQuery file].
 
+Also, compare the [life] with and without JQuery.
+
 [uncompressed JQuery file]: http://code.jquery.com/jquery-1.11.2.js
+
+[life]: http://youmightnotneedjquery.com
 
 ```javascript
 $ === JQuery
