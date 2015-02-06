@@ -127,7 +127,7 @@ This is how api handles information input and output.
 
 What can JQuery do?
 
-You can see the uncompressed JQuery file.
+First, have a look at the [uncompressed JQuery file].
 
 [uncompressed JQuery file]: http://code.jquery.com/jquery-1.11.2.js
 
@@ -140,6 +140,9 @@ $ === JQuery
 3. var x = window.document.findElementByClass('.class')[0] ---> $(x).on('click')
 //passing a function
 4. $(function() {})
+
+e.g.
+$('#username').val()
 ```
 
 Without JQuery, we must use

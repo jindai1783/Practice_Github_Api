@@ -3,7 +3,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     mocha_casperjs: {
       options: {
-
+        // we can tweak with the test here
+        // verbose: true
+        // 
       },
       files: {
         src: ['test/**/*']
