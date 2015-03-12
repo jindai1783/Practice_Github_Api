@@ -29,15 +29,6 @@
     <div>Hello Jin!!!</div>
     <script>
       $(document).ready(function(){
-        // $.get('https://api.github.com/users/jindai1783', function(user) {
-        //   var newProfile = Mustache.render($('#profile-template').html(), user);
-        //   $('.profile-container').append(newProfile);
-        // });
-        // $.get('https://api.github.com/users/jindai1783', function(user){
-        //   var newProfile = Mustache.render($('#profile-template').html(), user);
-        //   console.log(newProfile);
-        //   $('.profile-container').append(newProfile);
-        // })
         var object = $.get('https://api.github.com/users/jindai1783');
         var google = $.get('http://maps.googleapis.com/maps/api/js');
         var api3 = $.get('http://api.github.com');

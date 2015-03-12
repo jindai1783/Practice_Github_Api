@@ -5,7 +5,6 @@ module.exports = function(grunt) {
       options: {
         // we can tweak with the test here
         // verbose: true
-        // 
       },
       files: {
         src: ['test/**/*']

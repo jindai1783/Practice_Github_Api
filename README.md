@@ -1,14 +1,20 @@
-# Practice_Github_Api
+# Practice GitHub API
 
 <div id="table-of-contents">
 ## Table of Contents
 
+1. [Introduction](#introduction)
 1. [Tutorial](#tutorial)
   1. [Setting up test environment](#tutorial1)
   2. [Setting up the server using express](#tutorial2)
 2. [API](#api)
   1. [Loading api from Github](#tutorial3)
 3. [About JQuery](#about-jquery)
+
+<div id="introduction">
+## Introduction
+
+This repository is a useful reference for building a Nodejs web server, and using external APIs.
 
 <div id="tutorial">
 ## Tutorial
@@ -71,7 +77,7 @@ describe('homepage', function() {
 });
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[back to top](#table-of-contents)**
 
 <div id="tutorial2">
 ### Setting up the server using express
@@ -103,7 +109,7 @@ mkdir views
 touch index.ejs
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[back to top](#table-of-contents)**
 
 <div id="api">
 ## API
@@ -188,3 +194,5 @@ $.get('localhost:9999/users/tansaku', function() {
   console.log(this.responseText);
 });
 ```
+
+**[back to top](#table-of-contents)**
